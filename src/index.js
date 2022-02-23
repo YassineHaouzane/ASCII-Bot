@@ -21,7 +21,6 @@ const ascii =  ' .:-=+*#%@';
 const asciiLength = ascii.length;
 const getCharFromLuminance = luminance => ascii[Math.ceil((asciiLength - 1) * luminance / 255)];
 
-// Moyenne de blocks de pixels
 
 async function url_image_to_ascii(url) {
     let img_promise = Jimp.read(url);
