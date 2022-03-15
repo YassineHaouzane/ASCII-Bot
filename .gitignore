@@ -1,2 +1,4 @@
 node_modules/
+scripts/
 src/config_local.js
+.env
