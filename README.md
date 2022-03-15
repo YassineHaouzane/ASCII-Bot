@@ -14,7 +14,7 @@ A Discord bot that converts image to ASCII art
 DISCORD_TOKEN=[BOT TOKEN]
 CLIENT_ID=[BOT CLIENT ID]
 ```
-* Run the project by running this command : `npm run dev`
+* Run the project by running this command : `npm start`
 
 ## Docker
 
