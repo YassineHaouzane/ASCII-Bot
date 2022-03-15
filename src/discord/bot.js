@@ -1,6 +1,6 @@
 const { Client, Intents } = require('discord.js');
-const { token } = require('./config');
-const { url_image_to_ascii } = require('./index');
+const { token } = require('../config');
+const { url_image_to_ascii } = require('../image_converter');
 
 
 
@@ -21,7 +21,7 @@ client.on('interactionCreate', async interaction => {
             const lastMessage = messages.sort((a, b) => b.createdTimestamp - a.createdTimestamp).filter((m) => m.attachments.size > 0).first();
             const url = lastMessage.attachments.values().next().value.url;
             console.log(url);
-            url_image_to_ascii(url).then(value =>   interaction.reply(  '```\n' + value  + '```') );
+            url_image_to_ascii(url).then(value => interaction.reply('```\n' + value + '```'));
         })
     }
 

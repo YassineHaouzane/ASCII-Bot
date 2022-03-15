@@ -1,7 +1,7 @@
 const { SlashCommandBuilder } = require('@discordjs/builders');
 const { REST } = require('@discordjs/rest');
 const { Routes } = require('discord-api-types/v9');
-const { clientId, token } = require('./config');
+const { clientId, token } = require('../config');
 
 const commands = [
 	new SlashCommandBuilder().setName('ascii').setDescription('Converts an image to ascii'),
